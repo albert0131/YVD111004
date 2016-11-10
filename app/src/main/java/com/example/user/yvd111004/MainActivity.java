@@ -9,6 +9,7 @@ import android.widget.SimpleAdapter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     String[] cities = {"台北", "台中", "台南", "高雄"};
     String[] codes = {"02", "04", "06", "07"};
     int[] icons = {R.drawable.tpe, R.drawable.tc, R.drawable.tn, R.drawable.ks};
-    ArrayList<Map<String, String>> mylist;
+    ArrayList<Map<String, Objects>> mylist;
 
     ListView lv;
 //    ArrayAdapter<String> adapter;
