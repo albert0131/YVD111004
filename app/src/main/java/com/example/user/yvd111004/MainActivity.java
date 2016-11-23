@@ -17,10 +17,10 @@ public class MainActivity extends AppCompatActivity {
     String[] cities = {"台北", "台中", "台南", "高雄"};
     String[] codes = {"02", "04", "06", "07"};
     int[] icons = {R.drawable.tpe, R.drawable.tc, R.drawable.tn, R.drawable.ks};
-    ArrayList<Map<String, Objects>> mylist;
+    ArrayList<Map<String, Objects>> mylist;     // 宣告ArrayList
 
     ListView lv;
-//    ArrayAdapter<String> adapter;
+//    ArrayAdapter<String> adapter;         // for fruits list, use ArrayAdapter
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
