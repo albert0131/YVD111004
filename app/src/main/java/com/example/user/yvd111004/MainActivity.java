@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     String[] cities = {"台北", "台中", "台南", "高雄"};
     String[] codes = {"02", "04", "06", "07"};
     int[] icons = {R.drawable.tpe, R.drawable.tc, R.drawable.tn, R.drawable.ks};
-    ArrayList<Map<String, Objects>> mylist;     // 宣告ArrayList
+    ArrayList<Map<String, Objects>> mylist;     // layout建立ArrayList
 
     ListView lv;
 //    ArrayAdapter<String> adapter;         // for fruits list, use ArrayAdapter
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         SimpleAdapter adapter = new SimpleAdapter(MainActivity.this,
                 mylist, R.layout.myitem,
                 new String[] {"city", "code", "img"},
-                new int[] {R.id.textView, R.id.textView2, R.id.imageView});
+                new int[] {R.id.textView, R.id.textView2, R.id.imageView});     // layout建立textView, imageView
 
 
         lv.setAdapter(adapter);
